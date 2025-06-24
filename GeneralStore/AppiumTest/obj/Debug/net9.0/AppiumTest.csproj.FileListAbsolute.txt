@@ -1,0 +1,5 @@
+/Users/aleksandratolmachova/Desktop/c#/GeneralStore/GeneralStore/AppiumTest/obj/Debug/net9.0/AppiumTest.csproj.AssemblyReference.cache
+/Users/aleksandratolmachova/Desktop/c#/GeneralStore/GeneralStore/AppiumTest/obj/Debug/net9.0/AppiumTest.GeneratedMSBuildEditorConfig.editorconfig
+/Users/aleksandratolmachova/Desktop/c#/GeneralStore/GeneralStore/AppiumTest/obj/Debug/net9.0/AppiumTest.AssemblyInfoInputs.cache
+/Users/aleksandratolmachova/Desktop/c#/GeneralStore/GeneralStore/AppiumTest/obj/Debug/net9.0/AppiumTest.AssemblyInfo.cs
+/Users/aleksandratolmachova/Desktop/c#/GeneralStore/GeneralStore/AppiumTest/obj/Debug/net9.0/AppiumTest.csproj.CoreCompileInputs.cache

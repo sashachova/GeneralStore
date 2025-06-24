@@ -1,0 +1,24 @@
+{
+  "version": 2,
+  "dgSpecHash": "ffPNa6YnYow=",
+  "success": true,
+  "projectFilePath": "/Users/aleksandratolmachova/Desktop/c#/GeneralStore/GeneralStore/GeneralStore.csproj",
+  "expectedPackageFiles": [
+    "/Users/aleksandratolmachova/.nuget/packages/appium.webdriver/8.0.0/appium.webdriver.8.0.0.nupkg.sha512",
+    "/Users/aleksandratolmachova/.nuget/packages/coverlet.collector/6.0.2/coverlet.collector.6.0.2.nupkg.sha512",
+    "/Users/aleksandratolmachova/.nuget/packages/microsoft.codecoverage/17.11.1/microsoft.codecoverage.17.11.1.nupkg.sha512",
+    "/Users/aleksandratolmachova/.nuget/packages/microsoft.net.test.sdk/17.11.1/microsoft.net.test.sdk.17.11.1.nupkg.sha512",
+    "/Users/aleksandratolmachova/.nuget/packages/microsoft.testplatform.objectmodel/17.11.1/microsoft.testplatform.objectmodel.17.11.1.nupkg.sha512",
+    "/Users/aleksandratolmachova/.nuget/packages/microsoft.testplatform.testhost/17.11.1/microsoft.testplatform.testhost.17.11.1.nupkg.sha512",
+    "/Users/aleksandratolmachova/.nuget/packages/microsoft.win32.systemevents/8.0.0/microsoft.win32.systemevents.8.0.0.nupkg.sha512",
+    "/Users/aleksandratolmachova/.nuget/packages/newtonsoft.json/13.0.1/newtonsoft.json.13.0.1.nupkg.sha512",
+    "/Users/aleksandratolmachova/.nuget/packages/nunit/4.2.2/nunit.4.2.2.nupkg.sha512",
+    "/Users/aleksandratolmachova/.nuget/packages/nunit.analyzers/4.3.0/nunit.analyzers.4.3.0.nupkg.sha512",
+    "/Users/aleksandratolmachova/.nuget/packages/nunit3testadapter/4.6.0/nunit3testadapter.4.6.0.nupkg.sha512",
+    "/Users/aleksandratolmachova/.nuget/packages/selenium.support/4.33.0/selenium.support.4.33.0.nupkg.sha512",
+    "/Users/aleksandratolmachova/.nuget/packages/selenium.webdriver/4.33.0/selenium.webdriver.4.33.0.nupkg.sha512",
+    "/Users/aleksandratolmachova/.nuget/packages/system.drawing.common/8.0.10/system.drawing.common.8.0.10.nupkg.sha512",
+    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder/system.reflection.metadata/1.6.0/system.reflection.metadata.1.6.0.nupkg.sha512"
+  ],
+  "logs": []
+}

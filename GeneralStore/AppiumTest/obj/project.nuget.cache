@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "izlZoTjdXB4=",
+  "success": true,
+  "projectFilePath": "/Users/aleksandratolmachova/Desktop/c#/GeneralStore/GeneralStore/AppiumTest/AppiumTest.csproj",
+  "expectedPackageFiles": [
+    "/Users/aleksandratolmachova/.nuget/packages/appium.webdriver/8.0.0/appium.webdriver.8.0.0.nupkg.sha512",
+    "/Users/aleksandratolmachova/.nuget/packages/microsoft.win32.systemevents/8.0.0/microsoft.win32.systemevents.8.0.0.nupkg.sha512",
+    "/Users/aleksandratolmachova/.nuget/packages/selenium.support/4.33.0/selenium.support.4.33.0.nupkg.sha512",
+    "/Users/aleksandratolmachova/.nuget/packages/selenium.webdriver/4.33.0/selenium.webdriver.4.33.0.nupkg.sha512",
+    "/Users/aleksandratolmachova/.nuget/packages/system.drawing.common/8.0.10/system.drawing.common.8.0.10.nupkg.sha512"
+  ],
+  "logs": []
+}
