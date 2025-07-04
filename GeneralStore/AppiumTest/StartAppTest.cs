@@ -43,7 +43,7 @@ namespace GeneralStore.Tests
         }
 
         [Test]
-        public void VerifySplashElementIsNotClicable()
+        public void VerifySplashElementIsNotClickable()
         {
             var splashElement = wait!.Until(d => d.FindElement(By.Id("com.androidsample.generalstore:id/splashscreen")));
             Assert.That(splashElement.GetAttribute("clickable"), Is.EqualTo("false"), "Splash element is clickable");
@@ -57,6 +57,7 @@ namespace GeneralStore.Tests
             Assert.That(splashElement.Enabled, Is.True, "Splash element is disabled");
             Console.WriteLine("Splash element is enabled");
         }
+        //add test splash is displayed
         [Test]
         public void VerifySelectCountryText()
         {
@@ -81,7 +82,6 @@ namespace GeneralStore.Tests
             selectCountryDropDown.Click();
             var countryList = wait!.Until(d => d.FindElements(By.XPath("//android.widget.ListView")));
 
-            
             // Scroll using UiScrollable to the element with text
             var element = driver.FindElement(MobileBy.AndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView(new UiSelector().text(\"Ukraine\"));"));
             element.Click();
@@ -112,6 +112,12 @@ namespace GeneralStore.Tests
         [Test]
         public void LoginPositiveFlow()
         {
+            //select country
+            var selectCountryDropDown = wait!.Until(d => d.FindElement(By.Id("com.androidsample.generalstore:id/spinnerCountry")));
+            selectCountryDropDown.Click();
+            var element = driver.FindElement(MobileBy.AndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView(new UiSelector().text(\"Ukraine\"));"));
+            element.Click();
+
             var enterNameField = wait!.Until(d => d.FindElement(By.Id("com.androidsample.generalstore:id/nameField")));
             enterNameField.Click();
             enterNameField.SendKeys("testName");
@@ -126,7 +132,81 @@ namespace GeneralStore.Tests
             Assert.That(productsPageTitle.Text, Is.EqualTo("Products"), "Products page title is not correct after clicking Let's Shop button.");
             Console.WriteLine("USER IS LOGGED IN");
         }
+        [Test]
 
+public void Login_Positive_Flow()
+
+{
+
+    const string userName = "TestUser";
+    // Имя
+    var nameField = wait!.Until(d => d.FindElement(By.Id("com.androidsample.generalstore:id/nameField")));
+    nameField.Clear();
+    nameField.SendKeys(userName);
+ 
+    // Скрываем клавиатуру
+    if (driver!.IsKeyboardShown()) driver.HideKeyboard();
+    var femaleRadio = wait.Until(d =>
+    {
+        var el = d.FindElement(By.Id("com.androidsample.generalstore:id/radioFemale"));
+        return (el.Displayed && el.Enabled) ? el : null;
+    });
+    femaleRadio.Click();
+
+    // Кнопка Let's Shop
+    var btnLetsShop = wait.Until(d =>
+    {
+        var el = d.FindElement(By.Id("com.androidsample.generalstore:id/btnLetsShop"));
+        return (el.Displayed && el.Enabled) ? el : null;
+    });
+    btnLetsShop.Click();
+ 
+    // Проверяем заголовок Products
+    var toolbar = wait.Until(d => d.FindElement(By.Id("com.androidsample.generalstore:id/toolbar_title")));
+    Assert.That(toolbar.Text, Is.EqualTo("Products"),"После логина заголовок страницы неверен.");
+
+}
+
+        [Test]
+
+        public void LogInToProductPage()
+
+        {
+
+            wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
+
+            _registrationForm.EnterName("Test User");
+
+            _registrationForm.ClickLetsShopButton();
+ 
+            Assert.Multiple(() =>
+
+            {
+
+                Assert.That(_registrationForm.ToolbarTitleDisplayed, Is.True, "Toolbar title is not displayed.");
+
+                Assert.That(_registrationForm.ToolbarTitleEnabled, Is.True, "Toolbar title is not enabled.");
+
+                Assert.That(_registrationForm.ToolbarTitleText, Is.EqualTo("Products"), "Toolbar title text is not correct.");
+ 
+                Assert.That(_registrationForm.ToolbarTitleText, Is.EqualTo("Products"), "Products page title is not correct after clicking Let's Shop button.");
+ 
+                Assert.That(_productPage.ParentIsNotNull, "У RecyclerView нет родительского элемента");
+ 
+ 
+                Assert.That(_productPage.ProductElementsCount, Is.GreaterThan(0), "RecyclerView does not contain any items.");
+
+                Console.WriteLine("Items found in RecyclerView: " + _productPage.ProductElementsCount);
+ 
+ 
+                Console.WriteLine("Product items found in RecyclerView: " + _productPage.ProductItemsCount);
+
+                Assert.That(_productPage.ProductItemsCount, Is.GreaterThan(0), "Product items are not displayed in the RecyclerView.");
+
+            });
+
+        }
+ 
 
         [TearDown]
         public void TearDown()
