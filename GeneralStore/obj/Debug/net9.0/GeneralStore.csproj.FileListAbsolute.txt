@@ -1,4 +1,0 @@
-/Users/aleksandratolmachova/Desktop/c#/GeneralStore/GeneralStore/obj/Debug/net9.0/GeneralStore.csproj.AssemblyReference.cache
-/Users/aleksandratolmachova/Desktop/c#/GeneralStore/GeneralStore/obj/Debug/net9.0/GeneralStore.GeneratedMSBuildEditorConfig.editorconfig
-/Users/aleksandratolmachova/Desktop/c#/GeneralStore/GeneralStore/obj/Debug/net9.0/GeneralStore.csproj.CoreCompileInputs.cache
-/Users/aleksandratolmachova/Desktop/c#/GeneralStore/GeneralStore/obj/Debug/net9.0/GeneralStore.sourcelink.json
