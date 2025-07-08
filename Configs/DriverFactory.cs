@@ -16,13 +16,12 @@ namespace GeneralStore.Configs
         protected DriverFactory(AndroidDriver driver)
         {
             Driver = driver;
-            Wait   = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
+            Wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
 
         }
         protected IWebElement WaitFor(By locator) => Wait.Until(driver => driver.FindElement(locator));
- 
+
 
     }
 
 }
- 
