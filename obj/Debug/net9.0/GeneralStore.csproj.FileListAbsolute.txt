@@ -6,6 +6,7 @@
 /Users/aleksandratolmachova/Desktop/c#/GeneralStore/bin/Debug/net9.0/nunit.engine.api.dll
 /Users/aleksandratolmachova/Desktop/c#/GeneralStore/bin/Debug/net9.0/nunit.engine.core.dll
 /Users/aleksandratolmachova/Desktop/c#/GeneralStore/bin/Debug/net9.0/testcentric.engine.metadata.dll
+/Users/aleksandratolmachova/Desktop/c#/GeneralStore/bin/Debug/net9.0/General-Store.apk
 /Users/aleksandratolmachova/Desktop/c#/GeneralStore/bin/Debug/net9.0/NUnit3.TestAdapter.dll
 /Users/aleksandratolmachova/Desktop/c#/GeneralStore/bin/Debug/net9.0/GeneralStore.deps.json
 /Users/aleksandratolmachova/Desktop/c#/GeneralStore/bin/Debug/net9.0/GeneralStore.runtimeconfig.json
@@ -164,4 +165,3 @@
 /Users/aleksandratolmachova/Desktop/c#/GeneralStore/obj/Debug/net9.0/GeneralStore.pdb
 /Users/aleksandratolmachova/Desktop/c#/GeneralStore/obj/Debug/net9.0/GeneralStore.genruntimeconfig.cache
 /Users/aleksandratolmachova/Desktop/c#/GeneralStore/obj/Debug/net9.0/ref/GeneralStore.dll
-/Users/aleksandratolmachova/Desktop/c#/GeneralStore/bin/Debug/net9.0/General-Store.apk

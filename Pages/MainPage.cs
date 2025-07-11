@@ -21,6 +21,8 @@ namespace GeneralStore.Pages
         private readonly By _toolbarTitle = By.Id("com.androidsample.generalstore:id/toolbar_title");
         private readonly By _radioButtonFemale = By.Id("com.androidsample.generalstore:id/radioFemale");
         private readonly By _radioButtonMale = By.Id("com.androidsample.generalstore:id/radioMale");
+        private readonly By _nameValidation = By.XPath("//android.widget.FrameLayout[@resource-id=\"android:id/content\"]/android.view.ViewGroup/android.widget.RelativeLayout/android.widget.FrameLayout");
+
  
         public MainPage(AndroidDriver driver) : base(driver) { }
  
@@ -56,6 +58,7 @@ namespace GeneralStore.Pages
         public string? RadioButtonMaleChecked => WaitFor(_radioButtonMale) != null ? WaitFor(_radioButtonMale).GetAttribute("checked") : null;
         public bool RadioButtonMaleDisplayed => WaitFor(_radioButtonMale).Displayed;
         public bool RadioButtonMaleEnabled => WaitFor(_radioButtonMale).Enabled;
+        public bool IsDisplayedNameValidation => WaitFor(_nameValidation).Displayed;
 
         public void ClickLetsShopButton()
 
@@ -75,8 +78,7 @@ namespace GeneralStore.Pages
         {
             var spinner = Wait.Until(d => d.FindElement(By.Id("com.androidsample.generalstore:id/spinnerCountry")));
             spinner.Click();
-            var countryElement = Driver.FindElement(
-            MobileBy.AndroidUIAutomator($"new UiScrollable(new UiSelector().className(\"android.widget.ListView\")).scrollIntoView(new UiSelector().text(\"{country}\"))"));
+            var countryElement = Driver.FindElement(MobileBy.AndroidUIAutomator($"new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView(new UiSelector().text(\"{country}\"));"));
             countryElement.Click();
         }
 
