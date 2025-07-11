@@ -24,7 +24,7 @@ namespace GeneralStore.Pages
  
         public MainPage(AndroidDriver driver) : base(driver) { }
  
- 
+ //TODO add universal methods 
         public bool IsDisplayed => WaitFor(_splash).Displayed;
         public bool IsEnabled => WaitFor(_splash).Enabled;
         public bool IsClickable => WaitFor(_splash).GetAttribute("clickable") == "true";
@@ -39,39 +39,22 @@ namespace GeneralStore.Pages
         public bool SelectCountryTextEnabled => WaitFor(_selectCountryText).Enabled;
         public string SelectCountryText => WaitFor(_selectCountryText).Text;
         public string? SelectCountryTextClickable => WaitFor(_selectCountryText) != null ? WaitFor(_selectCountryText).GetAttribute("clickable") : null;
-
         public bool SpinnerCountryDisplayed => WaitFor(_spinnerCountry).Displayed;
-
         public bool SpinnerCountryEnabled => WaitFor(_spinnerCountry).Enabled;
-
         public string? SpinnerCountryClickable => WaitFor(_spinnerCountry) != null ? WaitFor(_spinnerCountry).GetAttribute("clickable") : null;
-
         public bool SelectedCountryDisplayed => WaitFor(_selectedCountry).Displayed;
-
         public bool SelectedCountryEnabled => WaitFor(_selectedCountry).Enabled;
-
         public string SelectedCountryText => WaitFor(_selectedCountry).Text;
-
         public bool BackGroundImageDisplayed => WaitFor(_backGroundImage).Displayed;
-
         public bool BackGroundImageEnabled => WaitFor(_backGroundImage).Enabled;
-
         public bool ToolbarTitleDisplayed => WaitFor(_toolbarTitle).Displayed;
-
         public bool ToolbarTitleEnabled => WaitFor(_toolbarTitle).Enabled;
-
         public string ToolbarTitleText => WaitFor(_toolbarTitle).Text;
-
         public bool RadioButtonFemaleDisplayed => WaitFor(_radioButtonFemale).Displayed;
-
         public bool RadioButtonFemaleEnabled => WaitFor(_radioButtonFemale).Enabled;
-
         public string? RadioButtonFemaleChecked => WaitFor(_radioButtonFemale) != null ? WaitFor(_radioButtonFemale).GetAttribute("checked") : null;
-
         public string? RadioButtonMaleChecked => WaitFor(_radioButtonMale) != null ? WaitFor(_radioButtonMale).GetAttribute("checked") : null;
-
         public bool RadioButtonMaleDisplayed => WaitFor(_radioButtonMale).Displayed;
-
         public bool RadioButtonMaleEnabled => WaitFor(_radioButtonMale).Enabled;
 
         public void ClickLetsShopButton()
