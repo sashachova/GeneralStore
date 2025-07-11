@@ -8,8 +8,8 @@ namespace GeneralStore.Tests
 
 {
 
-    [Parallelizable(ParallelScope.Fixtures)]
     [TestFixture]
+    [NonParallelizable]
 
     public class OnboardingTests
 
@@ -17,10 +17,10 @@ namespace GeneralStore.Tests
         private AndroidDriver driver;
         private MainPage _splash;
 
-        [OneTimeSetUp]
+        [SetUp]
         public void OneTimeSetUp()
         {
-            var serverUrl = new Uri(Environment.GetEnvironmentVariable("APPIUM_SERVER_URL")?? "http://localhost:4723");
+            var serverUrl = new Uri(Environment.GetEnvironmentVariable("APPIUM_SERVER_URL") ?? "http://localhost:4723");
             driver = new AndroidDriver(
                 serverUrl,
                 AppiumConfig.BuildAndroidOptions(),
@@ -55,7 +55,7 @@ namespace GeneralStore.Tests
             });
         }
 
-        [OneTimeTearDown]
+        [TearDown]
         public void OneTimeTearDown()
 
         {

@@ -9,8 +9,8 @@ using OpenQA.Selenium.Support.UI;
 
 namespace GeneralStore.Tests
 {
-    [Parallelizable(ParallelScope.Fixtures)]
     [TestFixture]
+    [NonParallelizable]
 
     public class Registation
     {
@@ -19,7 +19,7 @@ namespace GeneralStore.Tests
         private ProductsList? _productTitle;
         private WebDriverWait? wait;
 
-        [OneTimeSetUp]
+        [SetUp]
         public void OneTimeSetUp()
         {
             var serverUrl = new Uri(Environment.GetEnvironmentVariable("APPIUM_SERVER_URL") ?? "http://localhost:4723");
@@ -47,7 +47,7 @@ namespace GeneralStore.Tests
         [Test]
         public void Registation_PositiveFlow_Male()
         {
-            _login.SelectCountry("Ukraine");
+            _login.SelectCountry("Albania");
             _login.EnterName("AutoTest");
             _login.ClickRadioButtonMale();
             _login.ClickLetsShopButton();
@@ -58,13 +58,13 @@ namespace GeneralStore.Tests
         [Test]
         public void Registation_NegativeFlow_EmptyName()
         {
-            _login.SelectCountry("Ukraine");
+            _login.SelectCountry("Albania");
             _login.ClickRadioButtonMale();
             _login.ClickLetsShopButton();
 
             Assert.That(_login.IsDisplayedNameValidation, Is.True, "Name validation error is not displayed");
         }
-              [OneTimeTearDown]
+        [TearDown]
         public void OneTimeTearDown()
 
         {
