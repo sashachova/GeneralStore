@@ -165,3 +165,5 @@
 /Users/aleksandratolmachova/Desktop/c#/GeneralStore/obj/Debug/net9.0/GeneralStore.pdb
 /Users/aleksandratolmachova/Desktop/c#/GeneralStore/obj/Debug/net9.0/GeneralStore.genruntimeconfig.cache
 /Users/aleksandratolmachova/Desktop/c#/GeneralStore/obj/Debug/net9.0/ref/GeneralStore.dll
+/Users/aleksandratolmachova/Desktop/c#/GeneralStore/bin/Debug/net9.0/TestData.json
+/Users/aleksandratolmachova/Desktop/c#/GeneralStore/bin/Debug/net9.0/Bogus.dll

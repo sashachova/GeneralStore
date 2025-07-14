@@ -1,0 +1,45 @@
+{
+  "uuid": "ee4e70e0-caaa-4b50-b964-68f2987a1946",
+  "historyId": "02cec815743bd9e7b403ace01579235e",
+  "testCaseId": "2409a56fb77dbdea6829818e1c1b7d8b",
+  "fullName": "GeneralStore:GeneralStore.Tests.Registation.Registration_NegativeFlow_EmptyName()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "Aleksandras-MacBook-Air"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "GeneralStore.Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "Registration_NegativeFlow_EmptyName"
+    },
+    {
+      "name": "testClass",
+      "value": "Registation"
+    }
+  ],
+  "links": [],
+  "name": "Registration_NegativeFlow_EmptyName",
+  "status": "passed",
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1752503592499,
+  "stop": 1752503607735
+}

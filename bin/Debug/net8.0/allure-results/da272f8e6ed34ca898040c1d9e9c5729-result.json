@@ -1,0 +1,45 @@
+{
+  "uuid": "1f4d7d65-b802-4a7d-8350-dfb614e99d13",
+  "historyId": "700b342dea48c06f3240debce15c26ad",
+  "testCaseId": "7367897e8ca0f32767def5488568808f",
+  "fullName": "GeneralStore:GeneralStore.Tests.Registation.Registration_PositiveFlow_Female_WithFaker()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "Aleksandras-MacBook-Air"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "GeneralStore.Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "Registration_PositiveFlow_Female_WithFaker"
+    },
+    {
+      "name": "testClass",
+      "value": "Registation"
+    }
+  ],
+  "links": [],
+  "name": "Registration_PositiveFlow_Female_WithFaker",
+  "status": "passed",
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1752503680878,
+  "stop": 1752503700993
+}

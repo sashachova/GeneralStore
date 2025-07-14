@@ -1,0 +1,39 @@
+{
+
+    "users": [
+  
+      {
+  
+        "name": "AutoTest",
+  
+        "country": "Ukraine",
+  
+        "gender": "female"
+  
+      },
+  
+      {
+  
+        "name": "AutoTest",
+  
+        "country": "Albania",
+  
+        "gender": "male"
+  
+      },
+  
+      {
+  
+        "name": "",
+  
+        "country": "Albania",
+  
+        "gender": "male"
+  
+      }
+  
+    ]
+  
+  }
+  
+   

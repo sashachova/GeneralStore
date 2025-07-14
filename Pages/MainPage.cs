@@ -23,10 +23,10 @@ namespace GeneralStore.Pages
         private readonly By _radioButtonMale = By.Id("com.androidsample.generalstore:id/radioMale");
         private readonly By _nameValidation = By.XPath("//android.widget.FrameLayout[@resource-id=\"android:id/content\"]/android.view.ViewGroup/android.widget.RelativeLayout/android.widget.FrameLayout");
 
- 
+
         public MainPage(AndroidDriver driver) : base(driver) { }
- 
- //TODO add universal methods 
+
+        //TODO add universal methods 
         public bool IsDisplayed => WaitFor(_splash).Displayed;
         public bool IsEnabled => WaitFor(_splash).Enabled;
         public bool IsClickable => WaitFor(_splash).GetAttribute("clickable") == "true";
@@ -72,7 +72,7 @@ namespace GeneralStore.Pages
             var nameField = WaitFor(_nameField);
             nameField.SendKeys(name);
         }
- 
+
         public void SelectCountry(string country)
 
         {
@@ -105,50 +105,50 @@ namespace GeneralStore.Pages
 
             string expectedCountryText = "Afghanistan";
             string actualCountryText = country.Text;
- 
- 
+
+
             Assert.That(expectedCountryText, Is.EqualTo(actualCountryText), "Country name is incorrect.");
 
             TestContext.Out.WriteLine("Country text is correct.");
- 
- 
+
+
             Assert.That(country.Displayed, "Country is not displayed.");
 
             TestContext.Out.WriteLine("Country is displayed.");
- 
- 
+
+
             Assert.That(country.Enabled, "Country is not enabled.");
 
             TestContext.Out.WriteLine("Country is enabled.");
- 
- 
+
+
             var clickable = country.GetAttribute("clickable");
 
             Assert.That(clickable, Is.EqualTo("false"), "Country is clickable but should not be.");
 
             TestContext.Out.WriteLine("Country is not clickable.");
- 
- 
+
+
             var focusable = country.GetAttribute("focusable");
             Assert.That(focusable, Is.EqualTo("false"), "Country is focusable but should not be.");
             TestContext.Out.WriteLine("Country is not focusable.");
- 
- 
+
+
             var focused = country.GetAttribute("focused");
             Assert.That(focused, Is.EqualTo("false"), "Country is focused but should not be.");
             TestContext.Out.WriteLine("Country is not focused.");
- 
- 
+
+
             var scrollable = country.GetAttribute("scrollable");
             Assert.That(scrollable, Is.EqualTo("false"), "Country is scrollable but should not be.");
             TestContext.Out.WriteLine("Country is not scrollable.");
- 
- 
+
+
             var selected = country.GetAttribute("selected");
             Assert.That(selected, Is.EqualTo("false"), "Country is selected but should not be.");
             TestContext.Out.WriteLine("Country is not selected.");
- 
- 
+
+
             var checkedAttr = country.GetAttribute("checked");
             Assert.That(checkedAttr, Is.EqualTo("false"), "Country is checked but should not be.");
             TestContext.Out.WriteLine("Country is not checked.");

@@ -3,6 +3,7 @@ using GeneralStore.Configs;
 using GeneralStore.Pages;
 using NUnit.Framework;
 using OpenQA.Selenium.Appium.Android;
+using Allure.NUnit;
 
 namespace GeneralStore.Tests
 
@@ -10,6 +11,7 @@ namespace GeneralStore.Tests
 
     [TestFixture]
     [NonParallelizable]
+    [AllureNUnit]
 
     public class OnboardingTests
 
