@@ -1,0 +1,52 @@
+{
+  "uuid": "ae1f5cf9-4b4e-4d4e-99c2-7668229a996c",
+  "historyId": "700b342dea48c06f3240debce15c26ad",
+  "testCaseId": "7367897e8ca0f32767def5488568808f",
+  "fullName": "GeneralStore:GeneralStore.Tests.Registation.Registration_PositiveFlow_Female_WithFaker()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "Aleksandras-MacBook-Air"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "GeneralStore.Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "Registration_PositiveFlow_Female_WithFaker"
+    },
+    {
+      "name": "testClass",
+      "value": "Registation"
+    }
+  ],
+  "links": [],
+  "name": "Registration_PositiveFlow_Female_WithFaker",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.UnknownErrorException : An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up",
+    "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.Appium.AppiumDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)\n   at OpenQA.Selenium.Appium.AppiumDriver.FindElement(String by, String value)\n   at OpenQA.Selenium.Appium.MobileBy.FindElement(ISearchContext context)\n   at OpenQA.Selenium.Appium.ByAndroidUIAutomator.FindElement(ISearchContext context)\n   at OpenQA.Selenium.WebDriver.FindElement(By by)\n   at OpenQA.Selenium.Appium.AppiumDriver.FindElement(By by)\n   at GeneralStore.Pages.MainPage.SelectCountry(String country) in /Users/aleksandratolmachova/Desktop/c#/GeneralStore/Pages/MainPage.cs:line 81\n   at GeneralStore.Tests.Registation.Registration_PositiveFlow_Female_WithFaker() in /Users/aleksandratolmachova/Desktop/c#/GeneralStore/Tests/Registration.cs:line 71\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)"
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1752504939938,
+  "stop": 1752504990592
+}

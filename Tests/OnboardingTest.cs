@@ -4,6 +4,7 @@ using GeneralStore.Pages;
 using NUnit.Framework;
 using OpenQA.Selenium.Appium.Android;
 using Allure.NUnit;
+using NUnit.Framework;
 
 namespace GeneralStore.Tests
 

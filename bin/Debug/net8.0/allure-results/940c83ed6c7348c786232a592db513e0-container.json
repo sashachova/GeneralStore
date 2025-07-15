@@ -1,0 +1,12 @@
+{
+  "uuid": "4b4f6c25-86d9-46ad-8133-0fa4fe475d4e",
+  "name": "GeneralStore.Tests.OnboardingTests.NavigationBarBackground_visible_and_enabled",
+  "children": [
+    "d509d06a-9d4e-42c5-8441-818dfb64694c"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1752598205878,
+  "stop": 1752598233073
+}

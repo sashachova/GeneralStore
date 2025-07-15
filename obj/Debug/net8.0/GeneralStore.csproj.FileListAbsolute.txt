@@ -112,3 +112,4 @@
 /Users/aleksandratolmachova/Desktop/c#/GeneralStore/obj/Debug/net8.0/GeneralStore.pdb
 /Users/aleksandratolmachova/Desktop/c#/GeneralStore/obj/Debug/net8.0/GeneralStore.genruntimeconfig.cache
 /Users/aleksandratolmachova/Desktop/c#/GeneralStore/obj/Debug/net8.0/ref/GeneralStore.dll
+/Users/aleksandratolmachova/Desktop/c#/GeneralStore/bin/Debug/net8.0/allureConfig.json

@@ -1,0 +1,12 @@
+{
+  "uuid": "840567e4-baf8-48c2-b14b-ee94f8136a18",
+  "name": "GeneralStore.Tests.Registation.Registration_PositiveFlow_Male",
+  "children": [
+    "c0d7d714-5431-4c44-9b1c-6bc6509c8bc9"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1752598338992,
+  "stop": 1752598377716
+}

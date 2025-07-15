@@ -1,0 +1,52 @@
+{
+  "uuid": "43835f6e-0b46-4b1a-9776-f625cc92b796",
+  "historyId": "8f1501483acb6f5b3e1bb84b7ecdec88",
+  "testCaseId": "7a7d109c356f2a0b3c317931a0165db8",
+  "fullName": "GeneralStore:GeneralStore.Tests.Registation.Registration_PositiveFlow_Male()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "Aleksandras-MacBook-Air"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "GeneralStore.Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "Registration_PositiveFlow_Male"
+    },
+    {
+      "name": "testClass",
+      "value": "Registation"
+    }
+  ],
+  "links": [],
+  "name": "Registration_PositiveFlow_Male",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.UnknownErrorException : An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command '/Users/aleksandratolmachova/Library/Android/sdk/platform-tools/adb -P 5037 -s 6c831193 shell pm clear com.androidsample.generalstore' timed out after 20000ms'. Try to increase the 20000ms adb execution timeout represented by 'adbExecTimeout' capability",
+    "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.Appium.AppiumDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.StartSession(ICapabilities capabilities)\n   at OpenQA.Selenium.WebDriver..ctor(ICommandExecutor executor, ICapabilities capabilities)\n   at OpenQA.Selenium.Appium.AppiumDriver..ctor(ICommandExecutor commandExecutor, ICapabilities appiumOptions)\n   at OpenQA.Selenium.Appium.AppiumDriver..ctor(Uri remoteAddress, ICapabilities appiumOptions, TimeSpan commandTimeout, AppiumClientConfig clientConfig)\n   at OpenQA.Selenium.Appium.AppiumDriver..ctor(Uri remoteAddress, ICapabilities appiumOptions, TimeSpan commandTimeout)\n   at OpenQA.Selenium.Appium.Android.AndroidDriver..ctor(Uri remoteAddress, DriverOptions driverOptions, TimeSpan commandTimeout)\n   at GeneralStore.Tests.Registation.OneTimeSetUp() in /Users/aleksandratolmachova/Desktop/c#/GeneralStore/Tests/Registration.cs:line 35\n   at InvokeStub_Registation.OneTimeSetUp(Object, Object, IntPtr*)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)"
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1752598918655,
+  "stop": 1752598941338
+}

@@ -7,13 +7,16 @@ using NUnit.Framework.Internal;
 using OpenQA.Selenium.Appium.Android;
 using OpenQA.Selenium.Support.UI;
 using Allure.NUnit;
+using NUnit.Framework;
+using Allure.NUnit.Attributes;
 
 
 namespace GeneralStore.Tests
 {
+    [AllureNUnit]
     [TestFixture]
     [NonParallelizable]
-    [AllureNUnit]
+    
 
     public class Registation
     {
@@ -51,6 +54,7 @@ namespace GeneralStore.Tests
         }
 
         [Test]
+        [AllureTag("smoke")]
         public void Registration_PositiveFlow_Female()
         {
             var user = testData!.Users.First(u => u.Gender.ToLower() == "female");
