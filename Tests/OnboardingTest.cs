@@ -4,7 +4,7 @@ using GeneralStore.Pages;
 using NUnit.Framework;
 using OpenQA.Selenium.Appium.Android;
 using Allure.NUnit;
-using NUnit.Framework;
+
 
 namespace GeneralStore.Tests
 
@@ -20,7 +20,7 @@ namespace GeneralStore.Tests
         private AndroidDriver driver;
         private MainPage _splash;
 
-        [SetUp]
+        [OneTimeSetUp]
         public void OneTimeSetUp()
         {
             var serverUrl = new Uri(Environment.GetEnvironmentVariable("APPIUM_SERVER_URL") ?? "http://localhost:4723");
@@ -58,7 +58,9 @@ namespace GeneralStore.Tests
             });
         }
 
-        [TearDown]
+        
+
+        [OneTimeTearDown]
         public void OneTimeTearDown()
 
         {

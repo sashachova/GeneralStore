@@ -1,0 +1,56 @@
+{
+  "uuid": "a45c897a-7923-40bc-beaf-71edf99fc658",
+  "historyId": "5377c65e1a1631684e2256f7c637e6ef",
+  "testCaseId": "7ee141fb24147d56b56bbe5a5f60681d",
+  "fullName": "GeneralStore:GeneralStore.Tests.Registation.Registration_PositiveFlow_Female()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "Aleksandras-MacBook-Air"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "GeneralStore.Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "Registration_PositiveFlow_Female"
+    },
+    {
+      "name": "testClass",
+      "value": "Registation"
+    },
+    {
+      "name": "tag",
+      "value": "smoke"
+    }
+  ],
+  "links": [],
+  "name": "Registration_PositiveFlow_Female",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.UnknownErrorException : An unknown server-side error occurred while processing the command. Original error: 'com.androidsample.generalstore' is still running after 500ms timeout",
+    "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.Appium.AppiumDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.Appium.AppiumDriver.TerminateApp(String appId)\n   at GeneralStore.Tests.Registation.CollapseAndResumeApp(AndroidDriver driver, Int32 seconds) in /Users/aleksandratolmachova/Desktop/c#/GeneralStore/Tests/Registration.cs:line 98\n   at GeneralStore.Tests.Registation.Registration_PositiveFlow_Female() in /Users/aleksandratolmachova/Desktop/c#/GeneralStore/Tests/Registration.cs:line 154\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)"
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1752602515305,
+  "stop": 1752602579068
+}

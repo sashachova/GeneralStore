@@ -1,0 +1,12 @@
+{
+  "uuid": "00d704a4-3a42-4484-b112-baa6b55a46d9",
+  "name": "GeneralStore.Tests.OnboardingTests.SplashScreen_UI_basics",
+  "children": [
+    "67aafc9e-0898-4121-a468-626534cb8771"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1752602497567,
+  "stop": 1752602497883
+}

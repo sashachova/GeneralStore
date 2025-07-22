@@ -1,0 +1,52 @@
+{
+  "uuid": "d66041b1-578f-42ef-bcbc-0169c949fd0f",
+  "historyId": "e2f451e4c7edbc7906b77e3aad7da723",
+  "testCaseId": "c9715520a6ea10f702c1ff2b2e833747",
+  "fullName": "GeneralStore:GeneralStore.Tests.OnboardingTests.NavigationBarBackground_visible_and_enabled()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "Aleksandras-MacBook-Air"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "GeneralStore.Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "NavigationBarBackground_visible_and_enabled"
+    },
+    {
+      "name": "testClass",
+      "value": "OnboardingTests"
+    }
+  ],
+  "links": [],
+  "name": "NavigationBarBackground_visible_and_enabled",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 10 seconds\n  ----> OpenQA.Selenium.NoSuchElementException : An element could not be located on the page using the given search parameters.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+    "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at GeneralStore.Configs.DriverFactory.WaitFor(By locator) in /Users/aleksandratolmachova/Desktop/c#/GeneralStore/Configs/DriverFactory.cs:line 22\n   at GeneralStore.Pages.MainPage.get_NavBarDisplayed() in /Users/aleksandratolmachova/Desktop/c#/GeneralStore/Pages/MainPage.cs:line 34\n   at GeneralStore.Tests.OnboardingTests.<NavigationBarBackground_visible_and_enabled>b__4_0() in /Users/aleksandratolmachova/Desktop/c#/GeneralStore/Tests/OnboardingTest.cs:line 56\n   at NUnit.Framework.Assert.Multiple(TestDelegate testDelegate)\n   at GeneralStore.Tests.OnboardingTests.NavigationBarBackground_visible_and_enabled() in /Users/aleksandratolmachova/Desktop/c#/GeneralStore/Tests/OnboardingTest.cs:line 54\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--NoSuchElementException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.Appium.AppiumDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)\n   at OpenQA.Selenium.By.<.ctor>b__6_0(ISearchContext context)\n   at OpenQA.Selenium.By.FindElement(ISearchContext context)\n   at OpenQA.Selenium.WebDriver.FindElement(By by)\n   at GeneralStore.Configs.DriverFactory.<>c__DisplayClass3_0.<WaitFor>b__0(IWebDriver driver) in /Users/aleksandratolmachova/Desktop/c#/GeneralStore/Configs/DriverFactory.cs:line 22\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)"
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1753194515563,
+  "stop": 1753194535703
+}

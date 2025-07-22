@@ -1,0 +1,12 @@
+{
+  "uuid": "db33a45c-f33b-4bb3-ab76-5b8e87a86974",
+  "name": "GeneralStore.Tests.Registation.Registration_PositiveFlow_Female_WithFaker",
+  "children": [
+    "7790ffe6-4b58-44e4-848b-fad092a82ca0"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1752602579078,
+  "stop": 1752602599304
+}
