@@ -1,21 +1,17 @@
-using System;
-using System.Text.Json;
 using GeneralStore.Configs;
 using GeneralStore.Pages;
 using NUnit.Framework;
 using NUnit.Framework.Internal;
 using OpenQA.Selenium.Appium.Android;
-using OpenQA.Selenium.Support.UI;
 using Allure.NUnit;
 using Allure.NUnit.Attributes;
-using OpenQA.Selenium.Interactions;
-using OpenQA.Selenium.Appium.Android.Enums;
-using OpenQA.Selenium.Appium.Interfaces;
 using GeneralStore;
+using Allure.Net.Commons;
+using NUnit.Allure.Core;
 
-namespace CartTest.Tests
+namespace GeneralStore.Tests
 {
-    [AllureNUnit]
+    [Allure.NUnit.AllureNUnit]
     [TestFixture]
     [NonParallelizable]
 
@@ -65,13 +61,16 @@ namespace CartTest.Tests
             Assert.NotNull(_productTitle);
             string name = FakeDataGenerator.GenerateName();
             string country = FakeDataGenerator.GenerateCountry();
-            _login.SelectCountry(country);
+            AllureLifecycle.Instance.WrapInStep(() => { _login.SelectCountry(country); }, "Select country: " + country);
+            //_login.SelectCountry(country);
             _login.EnterName(name);
             _login.ClickRadioButtonFemale();
             _login.ClickLetsShopButton();
 
             _productTitle.ClickAddToCartButton();
             Assert.That(_productTitle.ProductCounterIsDisplayed, Is.True, "Counter was not updated");
+            //ADD GetCartItemCount method
+            //Assert.That(_productTitle.GetCartItemCount(), Is.EqualTo(1), "Expected 1 product in cart");
 
         }
      

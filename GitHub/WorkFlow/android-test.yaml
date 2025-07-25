@@ -1,0 +1,101 @@
+name: Run Appium Android Tests Locally
+ 
+on:
+
+  push:
+
+    branches: [ main ]
+
+  pull_request:
+ 
+jobs:
+
+  test:
+
+    runs-on: ubuntu-latest
+ 
+    env:
+
+      APPIUM_SERVER_URL: "http://127.0.0.1:4723"
+ 
+    steps:
+
+      - name: Checkout repository
+
+        uses: actions/checkout@v3
+ 
+      - name: Set up Java
+
+        uses: actions/setup-java@v3
+
+        with:
+
+          distribution: "temurin"
+
+          java-version: "17"
+ 
+      - name: Install Android SDK & emulator
+
+        uses: reactivecircus/android-emulator-runner@v2
+
+        with:
+
+          api-level: 30
+
+          target: default
+
+          arch: x86_64
+
+          profile: pixel
+
+          script: echo "Emulator ready"
+ 
+      - name: Install Node.js
+
+        uses: actions/setup-node@v3
+
+        with:
+
+          node-version: "18"
+ 
+      - name: Install Appium
+
+        run: |
+
+          npm install -g appium
+
+          appium --version
+ 
+      - name: Start Appium Server (background)
+
+        run: |
+
+          nohup appium > appium.log 2>&1 &
+ 
+      - name: Setup .NET
+
+        uses: actions/setup-dotnet@v3
+
+        with:
+
+          dotnet-version: '8.0.x'
+ 
+      - name: Restore NuGet packages
+
+        run: dotnet restore
+ 
+      - name: Build tests
+
+        run: dotnet build --configuration Release
+ 
+      - name: Install APK
+
+        run: |
+
+          adb install ./General-Store.apk
+ 
+      - name: Run tests
+
+        run: dotnet test --no-build --logger "console;verbosity=detailed"
+
+ 

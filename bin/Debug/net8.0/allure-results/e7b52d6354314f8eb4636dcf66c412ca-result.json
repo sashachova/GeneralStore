@@ -1,0 +1,56 @@
+{
+  "uuid": "53c775d5-d144-4f9c-be06-c80b276d1f7d",
+  "historyId": "21409fb1f2c5d2b062e8a999bbf8efb6",
+  "testCaseId": "0caf2bedfcfbd7c85ab61efe6f372acb",
+  "fullName": "GeneralStore:CartTest.Tests.CartTest.ProductIsAddedToTheCart()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "Aleksandras-MacBook-Air"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "CartTest.Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "ProductIsAddedToTheCart"
+    },
+    {
+      "name": "testClass",
+      "value": "CartTest"
+    },
+    {
+      "name": "tag",
+      "value": "smoke"
+    }
+  ],
+  "links": [],
+  "name": "ProductIsAddedToTheCart",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.NoSuchElementException : An element could not be located on the page using the given search parameters.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+    "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.Appium.AppiumDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)\n   at OpenQA.Selenium.Appium.AppiumDriver.FindElement(String by, String value)\n   at OpenQA.Selenium.Appium.MobileBy.FindElement(ISearchContext context)\n   at OpenQA.Selenium.Appium.ByAndroidUIAutomator.FindElement(ISearchContext context)\n   at OpenQA.Selenium.WebDriver.FindElement(By by)\n   at OpenQA.Selenium.Appium.AppiumDriver.FindElement(By by)\n   at GeneralStore.Pages.MainPage.SelectCountry(String country) in /Users/aleksandratolmachova/Desktop/c#/GeneralStore/Pages/MainPage.cs:line 81\n   at CartTest.Tests.CartTest.ProductIsAddedToTheCart() in /Users/aleksandratolmachova/Desktop/c#/GeneralStore/Tests/CartTest.cs:line 68\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)"
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1753463930423,
+  "stop": 1753463996577
+}
