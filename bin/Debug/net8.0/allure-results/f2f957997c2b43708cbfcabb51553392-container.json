@@ -1,0 +1,13 @@
+{
+  "uuid": "c6d20e3b-3fcd-4be8-b653-f822a1fab088",
+  "name": "GeneralStore.Tests.OnboardingTests",
+  "children": [
+    "837de4b2-0ae5-4f78-bee0-b140e19b0448",
+    "e9d93190-a0c7-4038-9fcc-145a4228130d"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1753447629217,
+  "stop": 1753447640972
+}

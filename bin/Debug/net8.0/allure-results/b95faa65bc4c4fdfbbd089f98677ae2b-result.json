@@ -1,0 +1,45 @@
+{
+  "uuid": "7ddf91ac-976b-4756-abf1-10a1b90defc5",
+  "historyId": "deb68ef1bb49dbefcd09d72c68f61640",
+  "testCaseId": "2ab0821cb8a128c2affdaee8a40e435b",
+  "fullName": "GeneralStore:GeneralStore.Tests.Registration.Registration_PositiveFlow_Male()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "Aleksandras-MacBook-Air"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "GeneralStore.Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "Registration_PositiveFlow_Male"
+    },
+    {
+      "name": "testClass",
+      "value": "Registration"
+    }
+  ],
+  "links": [],
+  "name": "Registration_PositiveFlow_Male",
+  "status": "passed",
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1753207065819,
+  "stop": 1753207076566
+}

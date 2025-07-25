@@ -1,0 +1,49 @@
+{
+  "uuid": "2bb0f940-dfcf-48b7-a86e-6bec4a27037f",
+  "historyId": "1853c4bdf266a42a68e7754e612dd593",
+  "testCaseId": "42f95627842d8b41b689a693f4f7574c",
+  "fullName": "GeneralStore:GeneralStore.Tests.Registration.Registration_PositiveFlow_Female()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "Aleksandras-MacBook-Air"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "GeneralStore.Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "Registration_PositiveFlow_Female"
+    },
+    {
+      "name": "testClass",
+      "value": "Registration"
+    },
+    {
+      "name": "tag",
+      "value": "smoke"
+    }
+  ],
+  "links": [],
+  "name": "Registration_PositiveFlow_Female",
+  "status": "passed",
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1753447657796,
+  "stop": 1753447727079
+}

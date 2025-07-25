@@ -1,0 +1,15 @@
+{
+  "uuid": "bf68fba6-46d7-4af0-83da-4b1c3b29ae0f",
+  "name": "GeneralStore.Tests.Registation",
+  "children": [
+    "11e59bf6-345d-4cee-a00f-b73bed2a4489",
+    "70104f19-1cc7-4554-8961-d7d0951646c4",
+    "513e01df-d53e-4c32-a9c1-e3c203b970e7",
+    "7b365943-dba4-4360-98b4-4cc55264e248"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1753204388090,
+  "stop": 1753204554604
+}

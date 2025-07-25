@@ -1,0 +1,56 @@
+{
+  "uuid": "c4c198bf-2584-41e2-8b36-8433873c3ad6",
+  "historyId": "21409fb1f2c5d2b062e8a999bbf8efb6",
+  "testCaseId": "0caf2bedfcfbd7c85ab61efe6f372acb",
+  "fullName": "GeneralStore:CartTest.Tests.CartTest.ProductIsAddedToTheCart()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "Aleksandras-MacBook-Air"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "CartTest.Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "ProductIsAddedToTheCart"
+    },
+    {
+      "name": "testClass",
+      "value": "CartTest"
+    },
+    {
+      "name": "tag",
+      "value": "smoke"
+    }
+  ],
+  "links": [],
+  "name": "ProductIsAddedToTheCart",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 10 seconds\n  ----> OpenQA.Selenium.NoSuchElementException : An element could not be located on the page using the given search parameters.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+    "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at GeneralStore.Configs.DriverFactory.WaitFor(By locator) in /Users/aleksandratolmachova/Desktop/c#/GeneralStore/Configs/DriverFactory.cs:line 22\n   at GeneralStore.Pages.ProductsList.ClickAddToCartButton() in /Users/aleksandratolmachova/Desktop/c#/GeneralStore/Pages/ProductsList.cs:line 28\n   at CartTest.Tests.CartTest.ProductIsAddedToTheCart() in /Users/aleksandratolmachova/Desktop/c#/GeneralStore/Tests/CartTest.cs:line 73\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--NoSuchElementException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.Appium.AppiumDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)\n   at OpenQA.Selenium.By.<.ctor>b__6_0(ISearchContext context)\n   at OpenQA.Selenium.By.FindElement(ISearchContext context)\n   at OpenQA.Selenium.WebDriver.FindElement(By by)\n   at GeneralStore.Configs.DriverFactory.<>c__DisplayClass3_0.<WaitFor>b__0(IWebDriver driver) in /Users/aleksandratolmachova/Desktop/c#/GeneralStore/Configs/DriverFactory.cs:line 22\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)"
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1753451369899,
+  "stop": 1753451424778
+}

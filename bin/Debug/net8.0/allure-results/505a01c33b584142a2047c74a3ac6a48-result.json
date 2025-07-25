@@ -1,0 +1,45 @@
+{
+  "uuid": "c8024de2-440e-464c-8d62-c3a2d393ef47",
+  "historyId": "6a5e90340c4ced437cb51977a810f860",
+  "testCaseId": "89da86516c252bb9d47d692cb3234f36",
+  "fullName": "GeneralStore:GeneralStore.Tests.OnboardingTests.SplashScreen_UI_basics()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "Aleksandras-MacBook-Air"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "GeneralStore.Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "SplashScreen_UI_basics"
+    },
+    {
+      "name": "testClass",
+      "value": "OnboardingTests"
+    }
+  ],
+  "links": [],
+  "name": "SplashScreen_UI_basics",
+  "status": "passed",
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1753204384913,
+  "stop": 1753204385583
+}

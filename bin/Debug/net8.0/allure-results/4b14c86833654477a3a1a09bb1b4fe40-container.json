@@ -1,0 +1,12 @@
+{
+  "uuid": "5283549f-9422-41d6-8432-9c9a41649032",
+  "name": "GeneralStore.Tests.Registration.Registration_NegativeFlow_EmptyName",
+  "children": [
+    "9d93b03c-3855-457f-bf83-eb32d6cedd0c"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1753447647800,
+  "stop": 1753447657787
+}

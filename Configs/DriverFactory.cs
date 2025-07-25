@@ -20,7 +20,12 @@ namespace GeneralStore.Configs
 
         }
         protected IWebElement WaitFor(By locator) => Wait.Until(driver => driver.FindElement(locator));
-
+        protected IReadOnlyCollection<IWebElement> WaitForAll(By locator) =>
+    Wait.Until(driver =>
+    {
+        var elements = driver.FindElements(locator);
+        return elements.Count > 0 ? elements : null;
+    });
 
     }
 

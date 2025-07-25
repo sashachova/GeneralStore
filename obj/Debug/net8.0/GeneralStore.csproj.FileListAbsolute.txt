@@ -15,6 +15,7 @@
 /Users/aleksandratolmachova/Desktop/c#/GeneralStore/bin/Debug/net8.0/testcentric.engine.metadata.dll
 /Users/aleksandratolmachova/Desktop/c#/GeneralStore/bin/Debug/net8.0/General-Store.apk
 /Users/aleksandratolmachova/Desktop/c#/GeneralStore/bin/Debug/net8.0/TestData.json
+/Users/aleksandratolmachova/Desktop/c#/GeneralStore/bin/Debug/net8.0/allureConfig.json
 /Users/aleksandratolmachova/Desktop/c#/GeneralStore/bin/Debug/net8.0/GeneralStore.deps.json
 /Users/aleksandratolmachova/Desktop/c#/GeneralStore/bin/Debug/net8.0/GeneralStore.runtimeconfig.json
 /Users/aleksandratolmachova/Desktop/c#/GeneralStore/bin/Debug/net8.0/GeneralStore.dll
@@ -112,4 +113,3 @@
 /Users/aleksandratolmachova/Desktop/c#/GeneralStore/obj/Debug/net8.0/GeneralStore.pdb
 /Users/aleksandratolmachova/Desktop/c#/GeneralStore/obj/Debug/net8.0/GeneralStore.genruntimeconfig.cache
 /Users/aleksandratolmachova/Desktop/c#/GeneralStore/obj/Debug/net8.0/ref/GeneralStore.dll
-/Users/aleksandratolmachova/Desktop/c#/GeneralStore/bin/Debug/net8.0/allureConfig.json

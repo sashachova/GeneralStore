@@ -1,0 +1,12 @@
+{
+  "uuid": "db54de78-618b-428c-aa99-9d93b4124f89",
+  "name": "CartTest.Tests.CartTest.ProductIsAddedToTheCart",
+  "children": [
+    "c4c198bf-2584-41e2-8b36-8433873c3ad6"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1753451369897,
+  "stop": 1753451424813
+}

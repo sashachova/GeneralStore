@@ -1,0 +1,58 @@
+{
+  "uuid": "3f13f521-0115-4fc4-a463-83e867cc89bf",
+  "historyId": "deb68ef1bb49dbefcd09d72c68f61640",
+  "testCaseId": "2ab0821cb8a128c2affdaee8a40e435b",
+  "fullName": "GeneralStore:GeneralStore.Tests.Registration.Registration_PositiveFlow_Male()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "Aleksandras-MacBook-Air"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "GeneralStore.Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "Registration_PositiveFlow_Male"
+    },
+    {
+      "name": "testClass",
+      "value": "Registration"
+    }
+  ],
+  "links": [],
+  "name": "Registration_PositiveFlow_Male",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 10 seconds\n  ----> OpenQA.Selenium.NoSuchElementException : An element could not be located on the page using the given search parameters.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception",
+    "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\n   at GeneralStore.Pages.MainPage.SelectCountry(String country) in /Users/aleksandratolmachova/Desktop/c#/GeneralStore/Pages/MainPage.cs:line 79\n   at GeneralStore.Tests.Registration.Registration_PositiveFlow_Male() in /Users/aleksandratolmachova/Desktop/c#/GeneralStore/Tests/Registration.cs:line 540\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)\n--NoSuchElementException\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)\n   at OpenQA.Selenium.By.<.ctor>b__6_0(ISearchContext context)\n   at OpenQA.Selenium.By.FindElement(ISearchContext context)\n   at OpenQA.Selenium.WebDriver.FindElement(By by)\n   at GeneralStore.Pages.MainPage.<>c.<SelectCountry>b__79_0(IWebDriver d) in /Users/aleksandratolmachova/Desktop/c#/GeneralStore/Pages/MainPage.cs:line 79\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)"
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [
+    {
+      "name": "Console Output",
+      "source": "b52b7123-4f0a-4732-b901-bde4ec7bbc26-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1753447764297,
+  "stop": 1753447785466
+}

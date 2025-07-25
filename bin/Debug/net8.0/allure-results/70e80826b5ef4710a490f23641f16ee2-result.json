@@ -1,0 +1,49 @@
+{
+  "uuid": "8b80b748-0a9e-4e7c-ade0-33cb06c47f87",
+  "historyId": "21409fb1f2c5d2b062e8a999bbf8efb6",
+  "testCaseId": "0caf2bedfcfbd7c85ab61efe6f372acb",
+  "fullName": "GeneralStore:CartTest.Tests.CartTest.ProductIsAddedToTheCart()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "Aleksandras-MacBook-Air"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "CartTest.Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "ProductIsAddedToTheCart"
+    },
+    {
+      "name": "testClass",
+      "value": "CartTest"
+    },
+    {
+      "name": "tag",
+      "value": "smoke"
+    }
+  ],
+  "links": [],
+  "name": "ProductIsAddedToTheCart",
+  "status": "passed",
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1753452515025,
+  "stop": 1753452532761
+}

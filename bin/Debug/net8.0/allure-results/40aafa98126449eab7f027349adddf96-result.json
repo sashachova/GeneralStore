@@ -1,0 +1,45 @@
+{
+  "uuid": "b2525f94-cc53-4e21-bd75-4ac8616b4de2",
+  "historyId": "e2f451e4c7edbc7906b77e3aad7da723",
+  "testCaseId": "c9715520a6ea10f702c1ff2b2e833747",
+  "fullName": "GeneralStore:GeneralStore.Tests.OnboardingTests.NavigationBarBackground_visible_and_enabled()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "Aleksandras-MacBook-Air"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "GeneralStore.Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "NavigationBarBackground_visible_and_enabled"
+    },
+    {
+      "name": "testClass",
+      "value": "OnboardingTests"
+    }
+  ],
+  "links": [],
+  "name": "NavigationBarBackground_visible_and_enabled",
+  "status": "passed",
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1753206444547,
+  "stop": 1753206445382
+}
