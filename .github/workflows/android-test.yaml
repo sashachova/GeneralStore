@@ -34,21 +34,9 @@ jobs:
 
           java-version: "17"
  
-      - name: Install Android SDK & emulator
+      - name: Setup Android SDK
 
-        uses: reactivecircus/android-emulator-runner@v2
-
-        with:
-
-          api-level: 30
-
-          target: default
-
-          arch: x86_64
-
-          profile: pixel
-
-          script: echo "Emulator ready"
+        uses: android-actions/setup-android@v2
  
       - name: Install Node.js
 
@@ -58,19 +46,15 @@ jobs:
 
           node-version: "18"
  
-      - name: Install Appium
+      - name: Install Appium and drivers
 
         run: |
 
           npm install -g appium
 
+          appium driver install uiautomator2
+
           appium --version
- 
-      - name: Start Appium Server (background)
-
-        run: |
-
-          nohup appium > appium.log 2>&1 &
  
       - name: Setup .NET
 
@@ -87,27 +71,52 @@ jobs:
       - name: Build tests
 
         run: dotnet build --configuration Release
-      - name: Launch Android Emulator
+ 
+      - name: Run tests with emulator
+
         uses: reactivecircus/android-emulator-runner@v2
+
         with:
+
           api-level: 30
+
           target: default
+
           arch: x86_64
+
           profile: pixel
+
+          ram-size: 2048M
+
+          heap-size: 512M
+
           disable-animations: true
+
           script: |
-            adb devices
+
+            echo "Emulator started, waiting for boot completion..."
+
             adb wait-for-device
-            adb shell input keyevent 82
- 
-      - name: Install APK
 
-        run: |
+            adb shell 'while [[ -z $(getprop sys.boot_completed) ]]; do sleep 1; done;'
 
-          adb install ./General-Store.apk
- 
-      - name: Run tests
+            echo "Emulator fully booted"
 
-        run: dotnet test --no-build --logger "console;verbosity=detailed"
+            echo "Starting Appium server..."
 
+            nohup appium > appium.log 2>&1 &
+
+            sleep 10
+
+            echo "Installing APK..."
+
+            adb install ./GeneralStore.apk
+
+            echo "Running tests..."
+
+            dotnet test --no-build --logger "console;verbosity=detailed"
+
+            echo "Appium logs:"
+
+            cat appium.log
  
