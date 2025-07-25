@@ -87,6 +87,18 @@ jobs:
       - name: Build tests
 
         run: dotnet build --configuration Release
+      - name: Launch Android Emulator
+        uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: 30
+          target: default
+          arch: x86_64
+          profile: pixel
+          disable-animations: true
+          script: |
+            adb devices
+            adb wait-for-device
+            adb shell input keyevent 82
  
       - name: Install APK
 
