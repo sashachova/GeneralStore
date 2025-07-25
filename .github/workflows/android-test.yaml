@@ -110,7 +110,7 @@ jobs:
 
             echo "Installing APK..."
 
-            adb install ./GeneralStore.apk
+            adb install ./General-Store.apk
 
             echo "Running tests..."
 
