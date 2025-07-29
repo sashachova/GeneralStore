@@ -25,6 +25,8 @@ namespace GeneralStore.Configs
             opts.PlatformName = GetEnvOr(DefaultPlatformName, "APPIUM_PLATFORM_NAME");
             opts.DeviceName = GetEnvOr(DefaultDeviceName, "APPIUM_DEVICE_NAME");
             opts.AutomationName = GetEnvOr(DefaultAutomation, "APPIUM_AUTOMATION_NAME");
+   
+
 
             var apkPath = GetEnvOr(
              Path.Combine(TestContext.CurrentContext.TestDirectory, "General-Store.apk"),
@@ -33,6 +35,8 @@ namespace GeneralStore.Configs
             opts.App = apkPath;
             opts.AddAdditionalAppiumOption("appPackage", DefaultAppPackage);
             opts.AddAdditionalAppiumOption("appActivity", DefaultAppActivity);
+            opts.AddAdditionalAppiumOption("uiautomator2ServerInstallTimeout", 60000);
+            opts.AddAdditionalAppiumOption("appWaitActivity", "*");
             return opts;
 
         }
