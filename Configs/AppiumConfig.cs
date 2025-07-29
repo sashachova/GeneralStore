@@ -35,8 +35,12 @@ namespace GeneralStore.Configs
             opts.App = apkPath;
             opts.AddAdditionalAppiumOption("appPackage", DefaultAppPackage);
             opts.AddAdditionalAppiumOption("appActivity", DefaultAppActivity);
-            opts.AddAdditionalAppiumOption("uiautomator2ServerInstallTimeout", 60000);
+            opts.AddAdditionalAppiumOption("uiautomator2ServerInstallTimeout", 120000);
             opts.AddAdditionalAppiumOption("appWaitActivity", "*");
+            opts.AddAdditionalAppiumOption("appWaitForLaunch", true);
+            opts.AddAdditionalAppiumOption("appWaitDuration", 60000); // 60 сек
+
+
             return opts;
 
         }
