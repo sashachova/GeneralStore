@@ -1,12 +1,10 @@
 name: Run Appium Android Tests Locally
  
 on:
-
   push:
-
-    branches: [ main ]
-
+    branches: [ main, developer ]
   pull_request:
+    branches: [ main, developer ]
  
 jobs:
 

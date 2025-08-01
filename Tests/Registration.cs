@@ -329,7 +329,7 @@ namespace GeneralStore.Tests
         public void OneTimeSetUp()
 
         {
-            var serverUrl = new Uri(Environment.GetEnvironmentVariable("APPIUM_SERVER_URL") ?? "http://localhost:4723");
+            var serverUrl = new Uri(Environment.GetEnvironmentVariable("APPIUM_SERVER_URL") ?? "http://host.docker.internal:4723");
             driver = new AndroidDriver(serverUrl, AppiumConfig.BuildAndroidOptions(), TimeSpan.FromSeconds(180));
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(20);
             _login = new MainPage(driver);

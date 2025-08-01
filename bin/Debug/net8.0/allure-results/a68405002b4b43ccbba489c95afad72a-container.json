@@ -1,0 +1,12 @@
+{
+  "uuid": "9930aa59-6c13-463d-afc6-4fe395067071",
+  "name": "GeneralStore.Tests.CartTest",
+  "children": [
+    "c207e4e6-54fc-4ae8-87bb-4ab1d93bf0bf"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1754067527025,
+  "stop": 1754067598900
+}

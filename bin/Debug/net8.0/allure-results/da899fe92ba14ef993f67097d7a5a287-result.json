@@ -1,0 +1,60 @@
+{
+  "uuid": "c207e4e6-54fc-4ae8-87bb-4ab1d93bf0bf",
+  "historyId": "8b23d89820a1f4d749d4f336a48ae77b",
+  "testCaseId": "acf0964a956437a7d0d2179068d4828f",
+  "fullName": "GeneralStore:GeneralStore.Tests.CartTest.ProductIsAddedToTheCart()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "Aleksandras-MacBook-Air"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "GeneralStore.Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "ProductIsAddedToTheCart"
+    },
+    {
+      "name": "testClass",
+      "value": "CartTest"
+    },
+    {
+      "name": "tag",
+      "value": "smoke"
+    }
+  ],
+  "links": [],
+  "name": "ProductIsAddedToTheCart",
+  "status": "passed",
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Select country: Saint Vincent and the Grenadines",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1754067541839,
+      "stop": 1754067595083
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1754067541722,
+  "stop": 1754067598801
+}
